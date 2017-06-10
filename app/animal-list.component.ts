@@ -15,7 +15,7 @@ import { Animal } from './animal.model';
   <hr>
 
   <!-- Animal List -->
-<div *ngFor="let currentAnimal of zooAnimalList | age:filterByAge | diet:filterByDiet">
+<div *ngFor="let currentAnimal of zooAnimalList | age:filterByAge">
 <ul>
  <li>Species:  {{currentAnimal.species}}</li>
  <li>Age:  {{currentAnimal.age}}</li>

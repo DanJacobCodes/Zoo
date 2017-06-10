@@ -18,17 +18,14 @@ import { Animal } from './animal.model';
 export class AppComponent {
   zoo: string = "Epicodus Zoo";
   selectedAnimal = null;
-  animals: Animal[] = [
-    new Animal('Gorilla', 'Harambe', 2, 'Carnivore', 'Gorilla enclosure', 'Male', 'Relaxing not harming anyone', 'Overreacting')
+  animalList: Animal[] = [
+    new Animal('Gorilla', 'Harambe', 2, 'Carnivore', 'Gorilla enclosure', 3, 'Male', 'Relaxing not harming anyone', 'Overreacting')
   ];
 
   editAnimal(clickedAnimal) {
     this.selectedAnimal = clickedAnimal;
   }
 
-  toggleDetails(clickedAnimal) {
-    this.animalDetails = clickedAnimal;
-  }
   finishedEditing(){
     this.selectedAnimal = null;
   }

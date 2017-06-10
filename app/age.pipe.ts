@@ -3,7 +3,8 @@ import {Animal} from './animal.model';
 
 
 @Pipe({
-
+name: "age",
+pure: false
 
 })
 
