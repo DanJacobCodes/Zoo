@@ -5,6 +5,7 @@ import { Animal } from './animal.model';
 @Component ({
   selector: 'animal-list',
   template: `
+  <!-- Select Option Menu (Filtering by Age) -->
   <h3>Filter By:</h3>
   <select (change)="onChange($event.target.value)">
     <option value="allAnimals" selected="selected">All Kegs</option>
@@ -13,19 +14,34 @@ import { Animal } from './animal.model';
   </select>
   <hr>
 
-
+  <!-- Animal List -->
+<div *ngFor="let currentAnimal of zooAnimalList | age:filterByAge | diet:filterByDiet">
+<ul>
+ <li>Species:  {{currentAnimal.species}}</li>
+ <li>Age:  {{currentAnimal.age}}</li>
+ <li>Sex:  {{currentAnimal.sex}}</li>
+ <li>Likes:  {{currentAnimal.likes}}</li>
+ <li>Dislikes:  {{currentAnimal.dislikes}}</li>
+ <li>Care Takers {{currentAnimal.caretakers}}</li>
+ <button class="btn btn-warning" (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button>
+</ul>
+</div>
   `
 })
 
 
 export class AnimalListComponent {
   @Input() childAnimalList: Animal[];
-  @Output()  = new EventEmitter();
+  @Output() clickSender  = new EventEmitter();
+  filterbyAge: string = "allAnimals";
 
-  editAnimalButton(animalToEdit: Animal)
+  editAnimalButton(animalToEdit: Animal){
+    this.clickSender.emit(animalToEdit)
+  }
 
-
-
+  onChange(option){
+    this.filterbyAge = option;
+  }
 
 
 }
