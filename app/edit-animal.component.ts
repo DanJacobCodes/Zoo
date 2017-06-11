@@ -36,7 +36,7 @@ import { Animal } from './animal.model';
     <label>Edit Animal Dislikes:</label>
     <input [(ngModel)]="selectedAnimal.dislikes" class="form-control">
     <br>
-    <button (click)="doneButtonClicked()" class="btn btn-success">Done</button>
+    <button (click)="doneButtonClickedSender()" class="btn btn-success">Done</button>
   </div>
 </div>
   `

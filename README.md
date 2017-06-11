@@ -1,4 +1,4 @@
-# Ask Me Anything
+# Epicodus Zoo
 
 ### By Dan Jacob 6/9/17
 
@@ -16,39 +16,40 @@ Epicodus JavaScript Project Week 3 || Angular 2
   * As a user I want options to view all animals, only young animals (less than 2 years of age), or only mature animals (more than 2 years of age).
   * As a user I want to click an animal to edit its name, age or caretakers.
 
-3. UX/UI
-  * Include and modify bootstrap/materialize/Sass etc.
-  * Develop custom style
 
 ## Description
-This appplication serves as practice with the Angular 2 Framework.
+This application serves as practice with the Angular 2 Framework. The application is intended for zoos as an animal tracking tool. Users (which in this case are the zoo staff) will be able to add animals to the webpage complete with key details pertaining to the animal. In addition, users will be able to edit animal information, and also sort animals by age.
+
+## Future Goals
+  * Add ability to search Animals
+  * Add ability to save to a Database
+  * Let users create a profile with login
+  * Upload pictures of the animals
 
 ## Prerequisites
-
 You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with NPM)
-* [Ember CLI](https://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
 
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd ama`
 * `npm install`
+* `bower install`
 
 ## Running / Development
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* `gulp build`
+* `gulp serve`
 
+## Support and contact details
 
+Should any issues occur contact me at dansamueljacob@gmail.com
 
-## Further Reading / Useful Links
+## Technologies Used
+ HTML, CSS, Bootstrap, JavaScript, NPM, node.JS, bower, gulp, Angular 2
 
-* [ember.js](http://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details

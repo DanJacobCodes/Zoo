@@ -16,7 +16,7 @@ import { Animal } from './animal.model';
     </div>
     <div>
       <label>Enter Age:</label>
-      <input #newAge style="font-size:25px" type="text" class="form-control"/>
+      <input #newAge style="font-size:25px" type="number" class="form-control"/>
     </div>
     <div>
       <label>Enter Diet Type:</label>
@@ -42,6 +42,7 @@ import { Animal } from './animal.model';
       <label>Dislikes:</label>
       <input #newDislikes style="font-size:25px" type="text" class="form-control"/>
     </div>
+    <br>
         <button class="btn btn-success" (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCareTakers.value, newSex.value, newLikes.value, newDislikes.value)">Add</button>
   </form>
 

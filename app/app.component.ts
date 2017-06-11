@@ -22,6 +22,8 @@ export class AppComponent {
   zoo: string = "Epicodus Zoo";
   selectedAnimal = null;
   animalList: Animal[] = [
+    new Animal('Gorilla', 'Harambe', 2, 'Carnivore', 'Gorilla enclosure', 3, 'Male', 'Relaxing not harming anyone', 'Overreacting'),
+    new Animal('Gorilla', 'Harambe', 2, 'Carnivore', 'Gorilla enclosure', 3, 'Male', 'Relaxing not harming anyone', 'Overreacting'),
     new Animal('Gorilla', 'Harambe', 2, 'Carnivore', 'Gorilla enclosure', 3, 'Male', 'Relaxing not harming anyone', 'Overreacting')
   ];
 

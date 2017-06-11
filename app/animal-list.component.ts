@@ -10,7 +10,7 @@ import { Animal } from './animal.model';
   <select (change)="onChange($event.target.value)">
     <option value="allAnimals" selected="selected">All Animals</option>
     <option value="young">Young Animals</option>
-    <option value="young">Mature Animals</option>
+    <option value="mature">Mature Animals</option>
   </select>
   <hr>
 
@@ -23,7 +23,7 @@ import { Animal } from './animal.model';
  <li>Likes:  {{currentAnimal.likes}}</li>
  <li>Dislikes:  {{currentAnimal.dislikes}}</li>
  <li>Care Takers {{currentAnimal.caretakers}}</li>
- <button class="btn btn-warning" (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button>
+ <button class="btn btn-warning" (click)="editAnimalButton(currentAnimal)">Edit!</button>
 </ul>
 </div>
   `
@@ -42,6 +42,5 @@ export class AnimalListComponent {
   onChange(option){
     this.filterbyAge = option;
   }
-
 
 }
