@@ -29,8 +29,8 @@ export class AnimalListComponent {
   @Output() clickSender  = new EventEmitter();
   filterbyAge: string = "allAnimals";
 
-  editAnimalButton(animalToEdit: Animal){
-    this.clickSender.emit(animalToEdit)
+  editButtonHasBeenClicked(currentAnimal: Animal){
+    this.clickSender.emit(currentAnimal)
   }
 
   onChange(option){

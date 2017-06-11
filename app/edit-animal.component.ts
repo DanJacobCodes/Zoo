@@ -4,7 +4,7 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'edit-animal',
   template: `
-  <div>
+  <div class = "container">
   <div *ngIf="selectedAnimal">
   <h4>{{selectedAnimal.name}}</h4>
   <hr>
@@ -44,7 +44,7 @@ import { Animal } from './animal.model';
 
 
 export class EditAnimalComponent{
-  @Input() selectedAnimal: Animal
+  @Input() selectedAnimal: Animal;
   @Output() doneButtonClickedSender = new EventEmitter();
 
   doneButtonClicked(){
