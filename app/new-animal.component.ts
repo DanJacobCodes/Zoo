@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Animal } from './animal.model';
 
 @Component({
@@ -45,3 +45,14 @@ import { Animal } from './animal.model';
   </form>
   `
 })
+
+
+export class NewAnimalComponent {
+  @Input() newAnimaltoAdd: boolean = false;
+  @Output() newAnimalSender = new EventEmitter();
+
+  submitForm(species: string, name: string, age: number, diet: string, location: string, caretakers: number, sex: string, likes: string, dislikes: string){
+     var newAnimaltoAdd: Animal = new Animal(species, name, age, diet, location, caretakers, sex, likes, dislikes);
+     this.newAnimalSender.emit(newAnimaltoAdd)
+   }
+ }
