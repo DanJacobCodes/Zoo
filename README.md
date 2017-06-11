@@ -7,9 +7,8 @@ Epicodus JavaScript Project Week 3 || Angular 2
 ## Planning
 1. Configuration/dependencies
 * Node.js/npm
-* Ember
-* Emberfire
-* Ember bootstrap
+* Angular 2
+* bootstrap
 
 2. Specs
   * As a user I want to log a newly-admitted animal by submitting a form with animal species, name, age, diet, zoo location, number of needed caretakers, sex, one like and one dislike.
@@ -44,19 +43,6 @@ You will need the following things properly installed on your computer.
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
 
 
 ## Further Reading / Useful Links

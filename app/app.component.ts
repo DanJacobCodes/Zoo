@@ -8,6 +8,9 @@ import { Animal } from './animal.model';
     <h1>{{zoo}}</h1>
     <ul>
       <li *ngFor="let currentAnimal of animals">{{currentAnimal.name}}<button (click)="editAnimal()">Edit</button></li>
+      <animal-list [childAnimalList]="animalList" (clickSender)="editAnimal($event)"></animal-list>
+      <edit-animal [selectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
+      <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
     </ul>
   </div>
   `

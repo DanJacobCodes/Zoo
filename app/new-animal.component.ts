@@ -20,11 +20,11 @@ import { Animal } from './animal.model';
     </div>
     <div>
       <label>Enter Diet Type:</label>
-      <input #newDiet style="font-size:25px" type="number" class="form-control"/>
+      <input #newDiet style="font-size:25px" type="text" class="form-control"/>
     </div>
     <div>
       <label>Enter Zoo Location:</label>
-      <input #newLocation style="font-size:25px" type="number" class="form-control"/>
+      <input #newLocation style="font-size:25px" type="text" class="form-control"/>
     </div>
     <div>
       <label>How many caretakers will this animal need?:</label>
@@ -32,15 +32,15 @@ import { Animal } from './animal.model';
     </div>
     <div>
       <label>Enter Sex:</label>
-      <input #newSex style="font-size:25px" type="number" class="form-control"/>
+      <input #newSex style="font-size:25px" type="text" class="form-control"/>
     </div>
     <div>
       <label>Likes:</label>
-      <input #newLikes style="font-size:25px" type="number" class="form-control"/>
+      <input #newLikes style="font-size:25px" type="text" class="form-control"/>
     </div>
     <div>
       <label>Dislikes:</label>
-      <input #newDislikes style="font-size:25px" type="number" class="form-control"/>
+      <input #newDislikes style="font-size:25px" type="text" class="form-control"/>
     </div>
   </form>
   `
