@@ -8,9 +8,9 @@ import { Animal } from './animal.model';
   <!-- Select Option Menu (Filtering by Age) -->
   <h3>Filter By:</h3>
   <select (change)="onChange($event.target.value)">
-    <option value="allAnimals" selected="selected">All Kegs</option>
-    <option value="young">Empty Kegs</option>
-    <option value="mature"> Not Empty Kegs</option>
+    <option value="allAnimals" selected="selected">All Animals</option>
+    <option value="young">Young Animals</option>
+    <option value="young">Mature Animals</option>
   </select>
   <hr>
 

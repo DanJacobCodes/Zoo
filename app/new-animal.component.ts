@@ -8,11 +8,11 @@ import { Animal } from './animal.model';
   <form>
     <div>
       <label>Enter Species:</label>
-      <input #newName style="font-size:25px" type="text" class="form-control"/>
+      <input #newSpecies style="font-size:25px" type="text" class="form-control"/>
     </div>
     <div>
       <label>Enter Name:</label>
-      <input #newAnimal style="font-size:25px" type="text" class="form-control"/>
+      <input #newName style="font-size:25px" type="text" class="form-control"/>
     </div>
     <div>
       <label>Enter Age:</label>
@@ -42,7 +42,9 @@ import { Animal } from './animal.model';
       <label>Dislikes:</label>
       <input #newDislikes style="font-size:25px" type="text" class="form-control"/>
     </div>
+        <button class="btn btn-success" (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCareTakers.value, newSex.value, newLikes.value, newDislikes.value)">Add</button>
   </form>
+
   `
 })
 
