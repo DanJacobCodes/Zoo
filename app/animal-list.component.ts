@@ -15,17 +15,11 @@ import { Animal } from './animal.model';
   <hr>
 
   <!-- Animal List -->
-<div *ngFor="let currentAnimal of animalList| age:filterByAge">
-<ul>
- <li>Species:  {{currentAnimal.species}}</li>
- <li>Age:  {{currentAnimal.age}}</li>
- <li>Sex:  {{currentAnimal.sex}}</li>
- <li>Likes:  {{currentAnimal.likes}}</li>
- <li>Dislikes:  {{currentAnimal.dislikes}}</li>
- <li>Care Takers {{currentAnimal.caretakers}}</li>
- <button class="btn btn-warning" (click)="editAnimalButton(currentAnimal)">Edit!</button>
-</ul>
-</div>
+  <ul>
+    <li class="card-panel"
+      *ngFor="let currentAnimal of childAnimalList| age:filterbyAge"><h4>{{currentAnimal.name}}</h4><button class="btn edit" (click)="editButtonHasBeenClicked(currentAnimal)">Edit</button>Species: {{currentAnimal.species}} / Age: {{currentAnimal.age}} / Diet: {{currentAnimal.diet}} / Location: {{currentAnimal.location}} / Caretakers: {{currentAnimal.caretakers}} / Sex: {{currentAnimal.sex}} / Likes: {{currentAnimal.likes}} / Dislikes: {{currentAnimal.dislikes}}
+    </li>
+  </ul>
   `
 })
 
